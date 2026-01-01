@@ -10,7 +10,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: AppColors.backgroundColor,
       elevation: 0,
       leading: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.only(left: 12.0,top: 8.0),
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(6.0),
@@ -23,9 +23,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       title: Image.network('https://img.pikbest.com/origin/10/41/85/35HpIkbEsTU62.png!w700wp', height: 50,), // Replace with your logo asset
+      centerTitle: true,
       actions: [
         Padding(
-          padding: const EdgeInsets.only(right: 12),
+          padding: const EdgeInsets.only(right: 12,top: 8.0),
           child: Container(
             decoration: BoxDecoration(
               border: Border.all(color: Colors.white24),
